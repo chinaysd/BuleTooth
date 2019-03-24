@@ -29,7 +29,7 @@
 
 //配置对箱
 ///< 蓝牙对箱使能,对箱暂时不开放.ble,后台和app
-#define   BT_TWS                      0   
+#define   BT_TWS                      0  
 ///对箱从机开机是否进入被连接还是回链状态
  #define    TWS_SLAVE_WAIT_CON         1  
 ///对箱主从是否一起关机
@@ -82,7 +82,7 @@
 ///配置是否支持手机app功能，  (1-支持,0-不支持)
    #define SUPPORT_APP_RCSP_EN   0 
 ///配置是否支持蓝牙灯硬件控制 (1-支持,0-不支持)
-   #define RCSP_LIGHT_HW	     0
+   #define RCSP_LIGHT_HW	     1
 ///配置是否支持指尖陀螺BLE数据传输 (1-支持,0-不支持) //此配置和 SUPPORT_APP_RCSP_EN不能同时打开
    #define BLE_FINGER_SPINNER_EN 0 	
 #endif

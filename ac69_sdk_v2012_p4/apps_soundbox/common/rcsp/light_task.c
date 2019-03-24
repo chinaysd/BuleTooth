@@ -26,6 +26,7 @@ extern void light_scene_frame_deal_test(void);
    @note   static void idle_task(void *p)
 */
 /*----------------------------------------------------------------------------*/
+
 static void light_task(void *p)
 {
     int msg[3];
