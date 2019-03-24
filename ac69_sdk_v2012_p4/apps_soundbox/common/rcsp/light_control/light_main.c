@@ -1022,7 +1022,7 @@ void bt_led_init(void)
 }
 
 
-void light_timer_temp10ms(void)
+void light_timer_10ms(void)
 {
 #if RCSP_LIGHT_HW
 
