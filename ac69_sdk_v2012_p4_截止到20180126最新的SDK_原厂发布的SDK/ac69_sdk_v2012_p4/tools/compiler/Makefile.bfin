@@ -1,0 +1,55 @@
+#*************************************************************************
+#
+#						Windows
+#
+#*************************************************************************
+ifeq ($(HOST_OS), windows) 
+
+# --------------tools path-----------------------
+export JL_TOOLS=c:\JL\dv10
+
+export CC = $(JL_TOOLS)\bin\dv10-elf-gcc
+export LD = $(JL_TOOLS)\bin\dv10-elf-ld
+export AR = $(JL_TOOLS)\bin\dv10-elf-ar
+
+export LIB_DIR = output$(SLASH)
+
+export MAKE_RULE = $(abspath .)\rule.mk
+
+export OBJCOPY=$(JL_TOOLS)\bin\dv10-elf-objcopy
+export OBJDUMP=$(JL_TOOLS)\bin\dv10-elf-objdump
+# --------------complier args-----------------------
+export AR_ARGS = \
+-r -s
+
+export LD_ARGS = \
+-L$(JL_TOOLS)\include\ \
+-o \
+
+
+export CC_ARGS = \
+-Wall \
+-c  \
+-Os \
+
+# --------------include path-----------------------
+export SYS_INCLUDES = \
+-I$(JL_TOOLS)\include  \
+
+ 
+export SYS_LIBS = \
+$(JL_TOOLS)\lib\libc.a  \
+$(JL_TOOLS)\lib\libgcc.a \
+$(JL_TOOLS)\lib\libgcov.a \
+$(JL_TOOLS)\lib\libiberty.a \
+$(JL_TOOLS)\lib\libm.a \
+-Ttools\$(CHIPID)\ram.ld \
+-M=tools\$(CHIPID)\map.txt \
+
+export LIBS_PATH=libs
+
+-include Makefile.include
+
+endif #($(HOST_OS), windows)
+
+ 
