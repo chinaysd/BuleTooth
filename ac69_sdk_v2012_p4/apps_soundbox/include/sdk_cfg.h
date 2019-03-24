@@ -80,9 +80,9 @@
    #define BLE_FINGER_SPINNER_EN  0	
 #else
 ///配置是否支持手机app功能，  (1-支持,0-不支持)
-   #define SUPPORT_APP_RCSP_EN   0 
+   #define SUPPORT_APP_RCSP_EN   1 
 ///配置是否支持蓝牙灯硬件控制 (1-支持,0-不支持)
-   #define RCSP_LIGHT_HW	     0
+   #define RCSP_LIGHT_HW	     1
 ///配置是否支持指尖陀螺BLE数据传输 (1-支持,0-不支持) //此配置和 SUPPORT_APP_RCSP_EN不能同时打开
    #define BLE_FINGER_SPINNER_EN 0 	
 #endif

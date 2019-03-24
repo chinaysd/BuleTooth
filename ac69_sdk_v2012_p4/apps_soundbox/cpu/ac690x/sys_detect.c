@@ -55,6 +55,7 @@ void sys_init(void)
 	usb_2_io();
 
 	key_init();
+	
     //led_init();
 	aux_init_api(); //AUX init
 }

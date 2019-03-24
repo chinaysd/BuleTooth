@@ -1,0 +1,42 @@
+---- SUPPORT_APP_RCSP_EN Matches (41 in 20 files) ----
+bt_configs_user.c (bluetooth\btstack):#if SUPPORT_APP_RCSP_EN
+bt_configs_user.c (bluetooth\btstack):#if SUPPORT_APP_RCSP_EN
+bt_key_deal.c (bluetooth\btstack):#if SUPPORT_APP_RCSP_EN
+bt_key_deal.c (bluetooth\btstack):#if SUPPORT_APP_RCSP_EN
+fm_radio.c (fm):#if SUPPORT_APP_RCSP_EN
+fm_radio.c (fm):#if SUPPORT_APP_RCSP_EN
+fm_radio.c (fm):#if SUPPORT_APP_RCSP_EN
+le_finger_spinner.c (bluetooth\btstack):#if SUPPORT_APP_RCSP_EN && BLE_FINGER_SPINNER_EN
+le_finger_spinner.c (bluetooth\btstack):#error "Can't Open SUPPORT_APP_RCSP_EN and BLE_FINGER_SPINNER_EN in sdk_cfg.h at same time"
+le_server_module.c (bluetooth\btstack):#if SUPPORT_APP_RCSP_EN
+le_server_module.c (bluetooth\btstack):#endif // SUPPORT_APP_RCSP_EN
+le_server_module.c (bluetooth\btstack):#if SUPPORT_APP_RCSP_EN
+le_server_module.c (bluetooth\btstack):#endif // SUPPORT_APP_RCSP_EN
+le_server_module.c (bluetooth\btstack):#if SUPPORT_APP_RCSP_EN
+le_server_module.c (bluetooth\btstack):#endif // SUPPORT_APP_RCSP_EN
+light_fade.c (common\rcsp\light_control):#if SUPPORT_APP_RCSP_EN
+light_main.c (common\rcsp\light_control):#if SUPPORT_APP_RCSP_EN
+light_pwm.c (common\rcsp\light_control):#if SUPPORT_APP_RCSP_EN
+light_task.c (common\rcsp):#if SUPPORT_APP_RCSP_EN
+light_task.c (common\rcsp):#if SUPPORT_APP_RCSP_EN
+light_task.c (common\rcsp):#if SUPPORT_APP_RCSP_EN
+linein.c (linein):#if SUPPORT_APP_RCSP_EN
+linein.c (linein):#if SUPPORT_APP_RCSP_EN
+main.c (main):#if SUPPORT_APP_RCSP_EN
+main.c (main):#if SUPPORT_APP_RCSP_EN
+music.c (music):#if SUPPORT_APP_RCSP_EN
+music.c (music):#if SUPPORT_APP_RCSP_EN
+music.c (music):#if SUPPORT_APP_RCSP_EN
+music.c (music):#if SUPPORT_APP_RCSP_EN
+rcsp_cbk_msg_deal.c (common\rcsp):#if SUPPORT_APP_RCSP_EN
+rcsp_event_deal.c (common\rcsp):#if SUPPORT_APP_RCSP_EN
+rcsp_interface.h (F:\共享文件\语音项目\git受控文件\BuleTooth\ac69_sdk_v2012_p4\include_lib\rcsp):#if SUPPORT_APP_RCSP_EN
+rcsp_protocol_deal.c (common\rcsp):#if SUPPORT_APP_RCSP_EN 
+rcsp_task_msg_deal.c (common\rcsp):#if SUPPORT_APP_RCSP_EN
+sdk_cfg.h (include):   #define SUPPORT_APP_RCSP_EN    0 
+sdk_cfg.h (include):   #define SUPPORT_APP_RCSP_EN   0 
+sdk_cfg.h (include):#if (SUPPORT_APP_RCSP_EN == 1)
+sdk_cfg.h (include):  #if ((BT_KTV_EN)||(SUPPORT_APP_RCSP_EN)||(BLE_BREDR_MODE&BT_BLE_EN))
+task_manage.c (common\os_api):#if SUPPORT_APP_RCSP_EN
+usb_device.c (usb_device):#if SUPPORT_APP_RCSP_EN
+usb_device.c (usb_device):#if SUPPORT_APP_RCSP_EN
