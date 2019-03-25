@@ -1,0 +1,11 @@
+---- PWM_output_cfg Matches (10 in 3 files) ----
+light_fade.c (apps_soundbox\common\rcsp\light_control):        PWM_output_cfg(OUT_CH1_SEL,1,led_fade_var.cur_w,FICKER_FREQUENCY);
+light_fade.c (apps_soundbox\common\rcsp\light_control):        PWM_output_cfg(OUT_ASSIGN_PORT,1,led_fade_var.cur_r,FICKER_FREQUENCY);       //控制红灯的PWM
+light_fade.c (apps_soundbox\common\rcsp\light_control):        PWM_output_cfg(OUT_CH1_SEL,1,led_fade_var.cur_g,FICKER_FREQUENCY);   //控制绿灯的PWM
+light_fade.c (apps_soundbox\common\rcsp\light_control):        PWM_output_cfg(OUT_CH0_SEL,2,led_fade_var.cur_b,FICKER_FREQUENCY);   //控制蓝灯的PWM
+light_fade.c (apps_soundbox\common\rcsp\light_control):        PWM_output_cfg(OUT_CH1_SEL,1,led_fade_var.cur_w,FICKER_FREQUENCY);
+light_fade.c (apps_soundbox\common\rcsp\light_control):        PWM_output_cfg(OUT_ASSIGN_PORT,1,led_fade_var.cur_r,FICKER_FREQUENCY);       //控制红灯的PWM
+light_fade.c (apps_soundbox\common\rcsp\light_control):        PWM_output_cfg(OUT_CH1_SEL,1,led_fade_var.cur_g,FICKER_FREQUENCY);   //控制绿灯的PWM
+light_fade.c (apps_soundbox\common\rcsp\light_control):        PWM_output_cfg(OUT_CH0_SEL,2,led_fade_var.cur_b,FICKER_FREQUENCY);   //控制蓝灯的PWM
+light_pwm.c (apps_soundbox\common\rcsp\light_control):AC51_PWM_ERR PWM_output_cfg(OUT_CH_SEL out_ch,u8 prescale,u8 duty,u32 fre)
+light_pwm.h (apps_soundbox\include\common\rcsp\light_control):AC51_PWM_ERR PWM_output_cfg(OUT_CH_SEL out_ch,u8 prescale,u8 duty,u32 fre);
