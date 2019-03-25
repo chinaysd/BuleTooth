@@ -1,0 +1,11 @@
+---- B_LED_ON Matches (10 in 3 files) ----
+led.c (apps_soundbox\cpu\ac690x\ui\led):    //B_LED_ON();
+led.c (apps_soundbox\cpu\ac690x\ui\led):        B_LED_ON();
+led.c (apps_soundbox\cpu\ac690x\ui\led):		    B_LED_ON();
+led.c (apps_soundbox\cpu\ac690x\ui\led):        B_LED_ON();
+led.c (apps_soundbox\cpu\ac690x\ui\led):        B_LED_ON();
+led.c (apps_soundbox\cpu\ac690x\ui\led):        B_LED_ON();
+led.c (apps_soundbox\cpu\ac690x\ui\led):            B_LED_ON();
+led.c (apps_soundbox\cpu\ac690x\ui\led):            B_LED_ON();
+led.h (apps_soundbox\include\cpu\ac690x\ui\led):#define B_LED_ON()        JL_PORTA->OUT &= ~LED_BIT;
+update.c (apps_soundbox\cpu\ac690x):	B_LED_ON();
