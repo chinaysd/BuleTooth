@@ -29,8 +29,8 @@ bool g_iic_busy;
 
 #define iic_delay()      delay(3000)
 
-#define IIC_DATA_PORT       12
-#define IIC_CLK_PORT        13
+#define IIC_DATA_PORT       1
+#define IIC_CLK_PORT        2
 
 #define iic_data_out()   do{JL_PORTA->DIR &= ~BIT(IIC_DATA_PORT);JL_PORTA->PU |= BIT(IIC_DATA_PORT);}while(0)
 #define iic_data_in()    do{JL_PORTA->DIR |=  BIT(IIC_DATA_PORT);JL_PORTA->PU |= BIT(IIC_DATA_PORT);}while(0)

@@ -1,14 +1,3 @@
----- MSG_BT_PP Matches (13 in 5 files) ----
-Bt_key_deal.c (apps_soundbox\bluetooth\btstack):        case MSG_BT_PP:
-Bt_key_deal.c (apps_soundbox\bluetooth\btstack):        case MSG_BT_PP:
-Bt_key_deal.c (apps_soundbox\bluetooth\btstack):            puts("MSG_BT_PP\n");
-Bt_key_msg.c (apps_soundbox\bluetooth\btstack):								/*03*/    MSG_BT_PP,\
-Bt_key_msg.c (apps_soundbox\bluetooth\btstack):                        /*00*/    MSG_BT_PP,\
-Bt_key_msg.c (apps_soundbox\bluetooth\btstack):                        /*00-220K*/    MSG_BT_PP,\
-Bt_key_msg.c (apps_soundbox\bluetooth\btstack):                        /*09-0R  */    MSG_BT_PP,
-Bt_key_msg.c (apps_soundbox\bluetooth\btstack):                        /*00*/    MSG_BT_PP,\
-Msg.h (include_lib\common):    MSG_BT_PP,
-Rcsp_cbk_msg_deal.c (apps_soundbox\common\rcsp):        msg = MSG_BT_PP;
-Rcsp_cbk_msg_deal.c (apps_soundbox\common\rcsp):        msg = MSG_BT_PP;
-Rcsp_task_msg_deal.c (apps_soundbox\common\rcsp):        		os_taskq_post(target_name,1,MSG_BT_PP);
-Rcsp_task_msg_deal.c (apps_soundbox\common\rcsp):        		os_taskq_post(target_name,1,MSG_BT_PP);
+---- 按键值 Matches (2 in 2 files) ----
+key.h (apps_soundbox\include\cpu\ac690x\key_drv):按键值
+key_drv_io.c (apps_soundbox\cpu\ac690x\key_drv):	 puts("*************按键值***************\n");

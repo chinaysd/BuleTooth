@@ -18,12 +18,14 @@
 #include "ui/led/led7_drv.h"
 #include "irq_api.h"
 #include "clock.h"
+#include "iic.h"
+
 /*
 中断用到的变量可以都定义到结构体，
 然后通过接口获取，方便管理
 */
 
-#define TIMER2_FOR_PWM_DEBUG	0
+#define TIMER2_FOR_PWM_DEBUG	1
 
 extern void light_timer_10ms(void);
 extern void sys_timer_schedule();
@@ -226,10 +228,11 @@ static void timer2_isr_callback(void)//1ms
 		JL_PORTB->OUT ^= BIT(1);
 	}
 
-	if(cnt >= 500)//500ms
+	if(cnt >= 10)//500ms
 	{
 		JL_PORTB->OUT ^= BIT(0);
-        cnt = 0;
+             cnt = 0;
+	      //puts("*************杨顺德***************\n");
 	}
 }
 

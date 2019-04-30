@@ -25,9 +25,9 @@
 #endif/*KEY_UART_DEBUG*/
 
 /*按键类型定义*/
-#define KEY_AD_EN       1   ///<AD按键使能
-#define KEY_IO_EN       0   ///<IO按键使能
-#define KEY_IR_EN       1   ///<红外遥控使能,PA9
+#define KEY_AD_EN       0   ///<AD按键使能
+#define KEY_IO_EN        1   ///<IO按键使能
+#define KEY_IR_EN        0   ///<红外遥控使能,PA9
 #define KEY_TCH_EN      0   ///<触摸按键使能
 
 /*按键类型*/

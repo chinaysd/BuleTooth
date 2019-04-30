@@ -25,6 +25,8 @@
 #include "irq_api.h"
 #include "rcsp/rcsp_interface.h"
 #include "key_drv/key_drv_ad.h"
+#include "iic.h"
+
 
 enum{
 	WAKEUP_0 = 0,
@@ -482,6 +484,7 @@ static void TaskMain(void *p)
 
 	//SFR(JL_SYSTEM->LDO_CON,7,3,1);
     led_init();
+    iic_init(); 
     JL_SYSTEM->LVD_CON |= BIT(2);
 #if DAC_AUTO_MUTE_EN
 	digit_auto_mute_set(AUTO_MUTE_CFG, 4, 1200, 200);
@@ -493,7 +496,7 @@ static void TaskMain(void *p)
 
     os_time_dly(50) ;
 #if RCSP_LIGHT_HW
-	light_init();
+    light_init();
 #endif
 
     while(1)

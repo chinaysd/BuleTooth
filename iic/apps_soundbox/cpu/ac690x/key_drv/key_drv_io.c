@@ -1,6 +1,7 @@
 #include "includes.h"
 #include "key_drv/key.h"
 #include "key_drv/key_drv_io.h"
+#include "iic.h"
 
 
 #if KEY_IO_EN
@@ -28,10 +29,30 @@ void io_key_init(void)
 /*----------------------------------------------------------------------------*/
 tu8 get_iokey_value(void)
 {
-    //key_puts("get_iokey_value\n");
+	//key_puts("get_iokey_value\n");
+    u8 string[5]={};
     tu8 key_num = NO_KEY;
 
     if(IS_KEY0_DOWN()){
+	 //iic_write(0x53,0x45,&string[2],1);
+	 iic_readn(0x5b,0xff,&string[0],1);
+	 switch (string[0])
+	 {
+	 	case 0x01:
+			        puts("*************按键值1***************\n");
+			        break;
+	       case 0x02:
+		   	        puts("*************按键值2***************\n");
+		   	        break;
+		case 0x04:
+			        puts("*************按键值3***************\n");
+			        break;
+		case 0x08:
+			       puts("*************按键值4***************\n");
+			        break;
+		default:
+			        break;
+	 }
         key_puts(" KEY0 ");
         return 0;
     }
