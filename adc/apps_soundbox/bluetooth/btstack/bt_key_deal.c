@@ -835,7 +835,6 @@ static void btstack_key_handler(void *ptr,int *msg)
          case MSG_BT_MUSIC_EQ:
 			set_bt_eq_mode(user_val->bt_eq_mode+1);
             printf("MSG_BT_EQ %d\n", user_val->bt_eq_mode);
-
             break;
 #endif // EQ_EN
 

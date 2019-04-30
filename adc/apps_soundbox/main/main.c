@@ -473,7 +473,7 @@ static void TaskMain(void *p)
 	    }
 		else if(msg[0] == MSG_POWER_OFF)
 		{	   
-			puts("****************power_off***************\n");
+			puts("****************power_off***************\n");	
 		    soft_power_ctl(PWR_OFF);
 		}
 	}

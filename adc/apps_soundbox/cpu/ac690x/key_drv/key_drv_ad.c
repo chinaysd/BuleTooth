@@ -250,5 +250,4 @@ u16 get_battery_level(void)
 	/* battery_value = (((u16)LDOIN_12*368)/10)/((u16)LDO_ref); */
 	/* printf("battery_value:0x%x    0x%x   %d\n",LDOIN_12,LDO_ref,battery_value); */
     return battery_value;
-
 }
