@@ -1,0 +1,6 @@
+---- MSG_BT_STACK_STATUS_CHANGE Matches (5 in 4 files) ----
+bt_configs_user.c (apps_soundbox\bluetooth\btstack):            return MSG_BT_STACK_STATUS_CHANGE;
+bt_key_deal.c (apps_soundbox\bluetooth\btstack):        case MSG_BT_STACK_STATUS_CHANGE:
+bt_key_deal.c (apps_soundbox\bluetooth\btstack):            puts("MSG_BT_STACK_STATUS_CHANGE\n");
+key.c (apps_soundbox\cpu\ac690x\key_drv):	MSG_BT_STACK_STATUS_CHANGE
+msg.h (include_lib\common):    MSG_BT_STACK_STATUS_CHANGE,
